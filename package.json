@@ -1,0 +1,23 @@
+{
+  "name": "akram_pw4_047",
+  "version": "1.0.0",
+  "description": "uuid",
+  "main": "uuid.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masai-course/akram_pw4_047.git"
+  },
+  "author": "Akram",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/masai-course/akram_pw4_047/issues"
+  },
+  "homepage": "https://github.com/masai-course/akram_pw4_047#readme",
+  "dependencies": {
+    "browserify-fs": "^1.0.0",
+    "uuid": "^8.3.2"
+  }
+}

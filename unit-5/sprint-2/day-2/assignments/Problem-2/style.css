@@ -1,0 +1,136 @@
+
+body{
+    padding: 0;
+    margin: 0;
+    background: url(https://images.pexels.com/photos/53594/blue-clouds-day-fluffy-53594.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+
+.center{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 30px;
+ 
+}
+.container input{
+    height: 40px;
+    width: 300px;
+    border-radius: 12px;
+}
+#search_btn{
+    width: 200px;
+    border: 12px;
+    height: 40px;
+    background-color: crimson;
+    color: white;
+    border-radius: 10px;
+}
+#search_btn:hover{
+    background-color: brown;
+    cursor: pointer;
+}
+
+.contents{
+    margin-top: 30px;
+    border: 4px solid red;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    border-radius: 12px;
+    /* flex-direction: column; */
+}
+#details{
+    width: 470px;
+    padding-left: 20px;
+    font-weight: bold;
+    background-color: white;
+    /* opacity: 0.8; */
+    border-radius: 9px;
+}
+.Details_heading{
+    background-color: yellow;
+    padding: 10px 0px;
+    border-radius: 12px;
+    width: 100%;
+}
+p,h3{
+    font-size: 25px;
+}
+.map_section{
+    width: 600px;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.details_div{
+    height: 600px;
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*============= forcast CSS ============= */
+.weather_forcast_section{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: brown;
+}
+ #forcast_btn{
+    background-color: rgba(0, 255, 255, 0.823);
+    width: 200px;
+    height: 40px;
+    border-radius: 12px;
+    font-weight: bold;
+    margin-top: 14px;
+ }
+ #forcast_btn:hover{
+    background-color:  rgba(0, 255, 255, 0.354);
+    cursor: pointer;
+    color: white;
+}
+.head_days{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+   margin-top: -50px;
+   color: white;
+}
+ #forcast_data{
+    /* width: 93%; */
+    /* height: 250px; */
+    border: 3px solid yellow;
+    border-radius: 12px;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 3px;
+    margin: 0px 30px 10px 10px;
+ }
+ .forcast_box{
+    background-color: rgb(65, 126, 170);
+    border-radius: 12px;
+    padding: 0px 5px;
+    color: white;
+ } 
+ .forcast_box p{
+    font-size: 20px;
+ }
+ #city{
+    color: white;
+ }
+.weather_icon{
+    height: 100px;
+    width: 100px;
+    display: block;
+    margin: auto;
+    margin-top: 6px;
+    border-radius: 9px;
+}

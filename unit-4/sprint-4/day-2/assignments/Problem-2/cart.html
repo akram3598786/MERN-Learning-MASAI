@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Cart</title>
+
+    <style>
+
+  nav{
+    background-color: black;
+    color: white;
+    /* position: fixed; */
+    width: 100vw;
+    top: 0;
+    left: 0;
+}
+nav div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav div div a{
+    margin: 0px 40px;
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+}
+
+#contents div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+#totals{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+     }
+ #totals p{
+     font-size: 50px;
+     font-weight: bold;
+ }
+
+ .quantity_div{
+    padding: 9px;
+ }
+
+.quantity_div button{
+  width: 90px;
+  height: 50px;
+  font-size: 50px;
+  font-weight: bold;
+  margin-left: 9px;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div>
+            <h1>Navbar</h1>
+            <div>
+            <a href="mens.html">Mens</a>
+            <a href="womens.html">Womens</a>
+            </div>
+
+        </div>
+    </nav>
+
+    <div id="products">
+           <h1 id="heading">Products in Cart</h1>
+          <hr>
+        <div id="contents">
+
+        </div>
+    </div>
+    <div id="totals">
+        <p id="total_price"></p>
+        <p id="total_quantity"></p>
+    </div>
+   
+    <script src="cart.js"></script>
+</body>
+</html>

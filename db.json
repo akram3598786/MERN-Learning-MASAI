@@ -1,0 +1,35 @@
+{
+  "posts": [
+    {
+      "name": "sdjsjncj",
+      "category": "sdjnkcsjk",
+      "image_url": "smkfckmvejs",
+      "price": "454",
+      "gender": "Male",
+      "sold": false,
+      "id": 10
+    },
+    {
+      "name": "repleacing",
+      "category": "Nothing",
+      "image_url": "wil show",
+      "price": "00000",
+      "gender": "",
+      "sold": false,
+      "id": 11
+    },
+    {
+      "name": "repleacing",
+      "category": "Nothing",
+      "image_url": "wil show",
+      "price": "00000",
+      "gender": "",
+      "sold": false,
+      "id": 12
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

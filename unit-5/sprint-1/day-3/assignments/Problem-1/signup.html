@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SignUp</title>
+    
+    <style>
+       #msg{
+        color: white;
+        text-align: center;
+        padding: 9px;
+        transition: all ease-in-out;
+        
+       }
+    </style>
+</head>
+<body>   
+    <nav>
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li id="login"><a href="login.html">LogIn</a></li>
+                <li id="Signup"><a href="signup.html">SignUp</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="signup-form-div">
+    <div class="container">
+        <h4 id="msg"></h4>
+        <form action="submit">
+         <label for="">Name :
+            <input id="name" type="text" value="">
+         </label>
+         <label for="">Contact No. :
+            <input id="c_no" type="number" value="" id="">
+         </label>
+         <label for="">Email :
+            <input id="email" type="email" value="">
+         </label>
+         <label for="">Create Password :
+            <input id="password" type="password" value="">
+         </label>
+         <input id="submit" type="submit">
+        </form>
+    </div>
+    </div>
+</body>
+<script src="./scripts/signup.js"></script>
+</html>

@@ -1,0 +1,33 @@
+
+Find all the female users
+>> learn_mongo> db.users.find({gender : "Female"})
+
+Find all the female users who speak one of the two languages Kannada, Hindi
+>> learn_mongo> db.users.find({$or : [{language : "Hindi"},{language : "Kannada"}]})
+
+Find all the male users who can speak Hindi and female users who can speak Kannada
+>> db.users.find({$or:[{gender:'Male',language:'Hindi'},{gender:'Female',language:'Kannada'}]})
+
+Find all the users who wear the shirt size S
+>> learn_mongo> db.users.find({shirt_size : {$eq:"S"}})
+
+Find all the female users who wear the shirt size XL
+>> learn_mongo> db.users.find({gender:"Female", shirt_size : "XL"})
+
+Find all the English speaking male users and Hindi speaking female users
+>> learn_mongo> db.users.find({$or:[{gender:'Male',language:'English'},{gender:'Female',language:'Hindi'}]})
+
+Find all the male users who can speak Hindi or English and female users who can speak Kannada or German
+>> learn_mongo> db.users.find({$or:[{$and:[{gender:'Male'}, {$or:[{language:"Hindi"},{language:"English"}]}]},
+   {$and:[{gender:'Female'},{$or:[{language:'Kannada'},{language:'German'}]}]}]})
+
+Find all the female users who can speak Bengali who wear shirt size XL and male users who speak German and wear shirt size either L or M
+>>** learn_mongo> db.users.find({$or:[{gender:'female',language:'Bengali',shirt_size:'XL'},
+{$and:[{gender:'Male',language:'German'},
+{$or:[{shirt_size:'L'},{shirt_size:'M'}]}]}]})
+
+Find all the female users who speak any of the Indian languages (Hindi, Punjabi, Bengali, Gujarati, Tamil, Malayalam)
+>> learn_mongo> db.users.find({$and:[{gender:'Female'},{$or:[{language:'Hindi'},{language:'Punjabi'},{language:'Gujarati'},{language:'Tamil'},{language:'Malayalam'}]}]})
+
+Men who can speak Korean
+>> learn_mongo> db.users.find({gender:"Male",language:'Korean'})

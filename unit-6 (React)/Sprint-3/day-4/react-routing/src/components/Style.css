@@ -1,0 +1,41 @@
+
+.navLinks_ul{
+  display: flex;
+  gap: 40px;
+  text-decoration: none;
+  list-style: none;
+  background-color: black;
+  color: white;
+  padding: 9px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: x-large;
+} 
+.bold{
+  font-weight: bold;
+}
+#ProductList{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+table{
+  font-size: large;
+  display: block;
+  margin: auto;
+}
+th{
+  font-size: x-large;
+}
+table tr td, tr th{
+  border: 1px solid black;
+  padding: 20px;
+}
+.ProdIMG{
+  width: auto;
+  margin: auto;
+  height: 260px;
+}

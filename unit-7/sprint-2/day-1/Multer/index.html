@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multer Use</title>
+    <style>
+        #container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Uploading file using Multer - Express library</h1>
+
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="uploaded_file" /> <br>
+
+            <button type="submit">Submit</button>
+        </form>
+        <br>
+
+      
+    </div>
+<script src="index.js"></script>
+</body>
+
+</html>

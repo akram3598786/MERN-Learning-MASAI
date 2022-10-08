@@ -1,0 +1,38 @@
+{
+  "Products": [
+    {
+      "name" : "SmartPhone",
+      "price": 30,
+      "picURL":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS25Zd8ghjnk_taoQN5galrjam8jEQHjbBMDg&usqp=CAU",
+      "id" : 0
+  },
+  {
+      "name" : "Watch",
+      "price" : 20,
+      "picURL":"https://m.media-amazon.com/images/I/81nj6IlZpVL._UY500_.jpg",
+      "id" : 1
+  },
+  {
+      "name" : "Shirt",
+      "price" : 50,
+      "picURL":"https://m.media-amazon.com/images/I/31CcEhDB4QL._AC_UL320_.jpg",
+      "id" : 2
+  },
+  {
+      "name" : "Pants",
+      "price" : 10,
+      "picURL":"https://5.imimg.com/data5/UR/LF/MY-11410518/men-s-stylish-pant-500x500-500x500.jpg",
+      "id" : 3
+  }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

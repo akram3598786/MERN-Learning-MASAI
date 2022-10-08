@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice-Problem</title>
+
+    <style>
+        .m_cont{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid black;
+            flex-direction: column;
+            width: 700px;
+            height: 700px;
+        }
+        .container div{
+            color: white;
+            font-weight: bold;
+            font-size: 40px;
+            padding: 10px 20px;
+        }
+        button{
+            height: 60px;
+            background-color: brown;
+            color: white;
+            border-radius: 9px;
+            margin-top: 20px;
+        }
+        button:active{
+            background-color: green;
+        }
+        #winner{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="m_cont">
+        <h1>Throw Dice Game</h1>
+    <div class="container">
+        <div id="winner"></div>
+        <div id="member-1"></div>
+        <div id="member-2"></div>
+        <div id="member-3"></div>
+    </div>
+    <button id="roll">ROLL THE DICE</button>
+</div>
+    <script>
+
+document.getElementById("roll").addEventListener("click",get_winner);
+
+function get_winner(){
+   
+const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+let memb1=getRandomNumber(1,6);
+let memb2=getRandomNumber(1,6);
+let memb3=getRandomNumber(1,6);
+let memb1_div=document.getElementById("member-1");
+let memb2_div=document.getElementById("member-2");
+let memb3_div=document.getElementById("member-3");
+let win="";
+
+// for get winner and  backgroundColor - green
+if(memb1 > memb2 && memb1 > memb3){
+    win="Member-A";
+    memb1_div.style.backgroundColor="green";
+}  
+else if(memb2 > memb1 && memb2 > memb3){
+    win="Member-B";
+    memb2_div.style.backgroundColor="green";
+}  
+else if(memb3 > memb1 && memb3 > memb2){
+    win="Member-C";
+    memb3_div.style.backgroundColor="green";
+}  
+else{
+    // document.getElementById("winner").style.backgroundColor="blue";
+    win="Draw";
+} 
+
+// for backgroundColor - yellow
+if((memb1 > memb2 && memb2 >memb3)  || (memb1 < memb2 && memb2 < memb3)){
+     memb2_div.style.backgroundColor="yellow"
+}
+if((memb1 < memb2 && memb1 > memb3)  || (memb1 > memb2 && memb1 < memb3)){
+    memb1_div.style.backgroundColor="yellow"
+}
+if((memb1 > memb3 && memb3 >memb2)  || (memb1 < memb3 && memb3 < memb2)){
+    memb3_div.style.backgroundColor="yellow"
+}
+
+// for backgroundColor - red
+if((memb3 < memb1 && memb3 < memb2)){
+     memb3_div.style.backgroundColor="red";
+}
+if((memb2 < memb1 && memb2 < memb3)){
+    memb2_div.style.backgroundColor="red";
+}
+if((memb1 < memb2 && memb1 < memb3)){
+    memb1_div.style.backgroundColor="red";
+}
+
+// for backgroundColor - blue (if draw)
+if(memb1 == memb2){
+     memb1_div.style.backgroundColor="blue";
+     memb2_div.style.backgroundColor="blue";
+}
+if(memb1 == memb3){
+    memb1_div.style.backgroundColor="blue";
+    memb3_div.style.backgroundColor="blue";
+}
+if(memb2 == memb3){
+     memb2_div.style.backgroundColor="blue";
+     memb3_div.style.backgroundColor="blue";
+}
+
+if((memb1 == memb2 ==  memb3)){
+    memb1_div.style.backgroundColor="blue";
+    memb2_div.style.backgroundColor="blue";
+    memb3_div.style.backgroundColor="blue";
+}
+
+memb1_div.innerHTML=`<p>Member-A : ${memb1}</p>`;
+memb2_div.innerHTML=`<p>Member-B : ${memb2}</p>`;
+memb3_div.innerHTML=`<p>Member-C : ${memb3}</p>`;
+
+document.getElementById("winner").innerHTML=`<p> Winner : ${win}</p>`;
+}
+
+    </script>
+</body>
+</html>

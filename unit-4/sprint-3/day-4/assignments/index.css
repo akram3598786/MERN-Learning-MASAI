@@ -1,0 +1,51 @@
+table td,
+table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+h1{
+  text-align: center;
+  color: rgba(0, 3, 185, 0.54);
+  text-decoration: underline;
+}
+div{
+  display: flex;
+  justify-content: space-around;
+}
+form{
+  padding: 20px;
+  /* border: 2px solid black; */
+  border-radius: 12px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+thead{
+  background-color: rgba(0, 3, 185, 0.54);
+  color: white;
+}
+thead tr th{
+  padding: 12px;
+  
+}
+
+form input{
+  width: 400px;
+  height: 35px;
+  margin: 6px 6px 6px 0px;
+  border-radius: 3px;
+  border: 0px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+input[type="submit"]{
+  background-color:  rgba(0, 3, 185, 0.54);
+  width: 330px;
+  height: 40px;
+  color: white;
+  display: block;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 8px;
+}
+
+
+

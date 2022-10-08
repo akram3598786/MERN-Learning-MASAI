@@ -1,0 +1,48 @@
+
+/* ==== Navbar CSS ==== */
+
+.navbar ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+.navbar ul li a{
+    margin: 0px 20px;
+    text-decoration: none;
+}
+.navbar ul li a:hover{
+    background-color: black;
+    color: white;
+}
+
+/* ==== Form CSS ==== */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form{
+    padding: 30px;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    width: 30%;
+}
+form input{
+    display: flex;
+    height: 50px;
+    width: 100%;
+    
+}
+form label{
+    margin: 10px 15px;
+}
+#submit{
+  display: block;
+  margin: auto;
+}

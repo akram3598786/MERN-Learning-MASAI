@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sliding & Login-SignUp</title>
+     
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+       
+        /* #user p{
+            font-size: 30px;
+            margin: 0px 40px;
+        }
+        #login-signup_div{
+            display: flex;
+             justify-content: space-between; 
+            flex-direction: row;
+            background-color: gray;
+        } */
+
+        main{
+            width: 70%;
+            height: 500px;
+            margin: auto;
+            margin-top: 50px;
+            box-shadow: 0px 0px 4px gray;
+            position: relative;
+            overflow: hidden;
+        }
+        .slide{
+            position: absolute;
+            transition: 1s;
+        }
+
+        nav{
+            text-align: center;
+            margin-top: 30px;
+        }
+        nav button{
+            width: 5%;
+            height: 15%;
+        }
+    </style>
+</head>
+<body onload="check_login_sts()">
+    <nav>
+        <div class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li id="login"><a href="login.html">LogIn</a></li>
+                <li id="signup"><a href="signup.html">SignUp</a></li>
+                <li id="user"></li>
+                <li id="logout"> </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="slideshow">
+   <main>
+    <img src="https://picsum.photos/id/238/1200/500" class="slide" alt="IMG-loading">
+    <img src="https://picsum.photos/id/239/1200/500" class="slide" alt="IMG-loading">
+    <img src="https://picsum.photos/id/240/1200/500" class="slide" alt="IMG-loading">
+    <img src="https://picsum.photos/id/242/1200/500" class="slide" alt="IMG-loading">
+   </main>
+   </div>
+   <nav class="btns_div">
+    <button onclick="goback()" id="prev_btn">Prev</button>
+    <button onclick="gonext()" id="prev_btn">Next</button>
+   </nav>
+
+   <div id="sort-buttons">
+
+    <!--Add sorting here-->
+</div>
+<div id="movies">
+    <!--Show list of movies here-->
+</div>
+
+</body>
+<script src="./scripts/index.js"></script>
+</html>

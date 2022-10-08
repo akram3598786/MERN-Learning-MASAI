@@ -1,0 +1,13 @@
+
+Ques => Find all the users, whose 'id' OR 'age' OR number of 'family_members' is even, add a new field "even_user"  :true to these users.
+>>GET ==> mongo-learning> db.Eval_queries.find({$or:[{id : {$mod:[2,0]}},{age : {$mod:[2,0]}},{family_members : {$mod:[2,0]}}]})
+
+>> mongo-learning> db.Eval_queries.update({$or:[{id : {$mod:[2,0]}},{age : {$mod:[2,0]}},{family_members : {$mod:[2,0]}}]},{$set : {"even_user":true}})
+
+Ques => Find all the users, whose 'gender' is Male AND 'age' is odd - and decrease their 'age' by 1.
+>> GET ==>  mongo-learning> db.Eval_queries.find({gender:"Male", age : {$mod:[2,1]}})
+>> mongo-learning> db.Eval_queries.update({gender:"Male", age : {$mod:[2,1]}},{$set : {age:-1})
+
+
+Ques => Find all the users, whose 'native' is United States AND 'age' is less than or equal to 23 - and remove 'relocate_to' field, - and then write a query to find and sort them in ascending order of 'family_members'
+>> mongo-learning> db.Eval_queries.find({native : 'United States', age : {$lte:23}}).sort({family_members : -1})

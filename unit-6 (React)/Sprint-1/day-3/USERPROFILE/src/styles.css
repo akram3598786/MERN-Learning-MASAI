@@ -1,0 +1,52 @@
+.App {
+  font-family: sans-serif;
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  grid-gap: 40px;
+  background-color: rgb(232, 238, 238);
+  padding: 5px;
+  margin:0px;
+}
+#upperSection {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+#followBtn {
+  height: 20px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+#title {
+  margin-top: -9px;
+  margin-bottom: 20px;
+}
+.skillIcon {
+  width: 20px;
+  height: 20px;
+}
+#left_section {
+}
+.skills {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 9px;
+  margin: 0px;
+  font-size: small;
+}
+.slillBox {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  background-color: white;
+  padding: 2px;
+  border-radius: 5px;
+}
+#right_section {
+}
+#profilePic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}

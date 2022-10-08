@@ -1,0 +1,64 @@
+
+      /*======= Navbar CSS ======= */
+    
+      nav ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      
+      }
+      nav ul li{
+        list-style: none;
+      }
+      nav ul li a{
+        text-decoration: wavy;
+        font-style: none;
+        font-size: 25px;
+      }
+      nav ul li a:hover{
+        padding: 9px;
+        border-radius: 9px;
+          background-color: brown;
+          color: white;
+      }
+
+     /*======= Iputr Section CSS ======= */
+     .input_section {
+      margin-top: 40px;
+        gap: 20px;   
+       display: flex;
+        justify-content: center;    
+     }
+     input[type="text"]{
+      width: 30%;
+      height: 35px;
+      border-radius: 9px;
+     }
+     #submit{
+       background-color: brown;
+       color: white;  
+       border-radius: 9px;
+     }
+
+
+     /*======= Products CSS ======= */
+     #container{
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+     }
+     #contents_search{
+
+     }
+     #contents{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      flex-direction:column;
+     }   
+      
+     .box img{
+         width: 300px;
+         height: 300px;
+         border-radius: 9px;
+     }

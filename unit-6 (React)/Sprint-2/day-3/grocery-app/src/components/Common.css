@@ -1,0 +1,45 @@
+
+#GroceryInputBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#submitBtn{
+    width: 12%;
+    padding: 3px 0px;
+    margin: 10px 0px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 6px;
+    background-color: brown;
+    color: white;
+
+}
+#Glist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid brown;
+    width: 40%;
+    margin: auto;
+    border-radius: 15px;
+
+}
+table{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+table tr{
+    border: 1px solid black;
+}
+.items{
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+}

@@ -1,0 +1,34 @@
+{
+  "Todos": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "sts": true
+    },
+    {
+      "id": 2,
+      "title": "Learn Redux",
+      "sts": true
+    },
+    {
+      "title": "bhy",
+      "sts": false,
+      "id": 3
+    },
+    {
+      "title": "Main",
+      "sts": true,
+      "id": 4
+    },
+    {
+      "title": "Learnings",
+      "sts": false,
+      "id": 7
+    },
+    {
+      "title": "doing Great",
+      "sts": false,
+      "id": 8
+    }
+  ]
+}

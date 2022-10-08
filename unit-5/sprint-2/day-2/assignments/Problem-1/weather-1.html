@@ -1,0 +1,64 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-APP-I</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+
+        h2{
+            text-align: center;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .contents{
+            margin-top: 50px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            gap: 30px   ;
+        }
+        #details{
+            width: 470px;
+            /* height: 700px; */
+            color: white;
+        }
+        p,h3{
+            font-size: 25px;
+        }
+        .map_section{
+            width: 600px;
+            height: 500px;
+           
+        }
+    </style>
+</head>
+<body>
+    <h2>Weather App-I</h2>
+    <div class="container"> 
+        <label for="City">City :
+        <input type="text" name="" id="" placeholder="City Name">
+        <button id="search_btn" onclick="getweather()">Search Weather</button>
+    </label>
+
+    <div class="contents">
+       <div id="details">
+       </div>
+       <div class="map_section">
+        <!-- <iframe width="578" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=panipat&t=&z=9&ie=UTF8&iwloc=&output=embed"></iframe> -->
+       </div>
+    </div>
+ </div>
+</body>
+<script src="https://kit.fontawesome.com/792b524030.js" crossorigin="anonymous"></script>
+<script src="weather-1.js"></script>
+</html>

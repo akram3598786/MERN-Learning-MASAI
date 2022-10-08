@@ -1,0 +1,19 @@
+
+ .center{
+    text-align: center;
+    align-items: center;
+}
+.navbar{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+   
+}
+.navbar a{
+    text-decoration: none;
+    color: black;
+}
+.navbar a:hover{
+    text-decoration: underline;
+    background-color: azure;
+}

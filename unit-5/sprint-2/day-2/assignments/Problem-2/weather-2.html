@@ -1,0 +1,104 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+    <title>Weather-APP-II</title>
+</head>
+<body>
+    <h2 class="center">Weather App & Forcasting</h2>
+    <div class="container"> 
+        <label for="City">City :
+        <input type="text" name="" id="" placeholder="City Name">
+        <button id="search_btn" onclick="getweather()">Search Weather</button>
+    </label>
+
+    <div class="contents">
+        <div class="details_div">
+           <h3 class="center Details_heading">Weather Details</h3>
+           <div id="details">
+
+           </div>
+        </div>
+        <div >
+            <h3 class="center Details_heading">Map</h3>
+        <div class="map_section">
+            <!-- <iframe width="578" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=panipat&t=&z=9&ie=UTF8&iwloc=&output=embed"></iframe> -->
+        </div>
+        </div>
+    </div>
+    <hr>
+    <div class="weather_forcast_section">
+        <button id="forcast_btn" onclick="getweather_forcast()">Get 7 Day Forcast</button>
+        <h2 id="city" class="center"></h2>
+       <div class="head_days">
+          <h3>Sunday</h3>
+          <h3>Monday</h3>
+          <h3>Tuesday</h3>
+          <h3>Wenesday</h3>
+          <h3>Thursday</h3>
+          <h3>Friday</h3>
+          <h3>Saturday</h3>
+       </div>
+        <div id="forcast_data">
+            <!-- <div class="forcast_box">
+                <p>Temp : 838</p>
+                <p>Wind : 78 km/m</p>
+                <p>Clouds: sdjd kdedef jkfem</p>
+            </div>
+            <div class="forcast_box">
+                <p>Temp : 838</p>
+                <p>Wind : 78 km/m</p>
+                <p>Clouds: sdjd kdedef jkfem</p>
+            </div>
+            <div class="forcast_box">
+                <p>Temp : 838</p>
+                <p>Wind : 78 km/m</p>
+                <p>Clouds: sdjd kdedef jkfem</p>
+            </div>
+            <div class="forcast_box">
+                <p>Temp : 838</p>
+                <p>Wind : 78 km/m</p>
+                <p>Clouds: sdjd kdedef jkfem</p>
+            </div>
+            <div class="forcast_box">
+                <p>Temp : 838</p>
+                <p>Wind : 78 km/m</p>
+                <p>Clouds: sdjd kdedef jkfem</p>
+            </div>
+            <div class="forcast_box">
+                <p>Temp : 838</p>
+                <p>Wind : 78 km/m</p>
+                <p>Clouds: sdjd kdedef jkfem</p>
+            </div>
+            <div class="forcast_box">
+                <p>Temp : 838</p>
+                <p>Wind : 78 km/m</p>
+                <p>Clouds: sdjd kdedef jkfem</p>
+            </div> -->
+            <!-- <table>
+                <thead>
+                <tr>
+                    <th>Sunday</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                </tr>
+              </thead>
+              <tbody>
+
+              </tbody>
+            </table> -->
+      
+        </div>
+     </div>
+ </div>
+</body>
+<script src="https://kit.fontawesome.com/792b524030.js" crossorigin="anonymous"></script>
+<script src="weather-2.js"></script>
+</html>

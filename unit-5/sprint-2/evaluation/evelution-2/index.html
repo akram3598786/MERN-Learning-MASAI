@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+
+    <style>
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+
+            height: 60px;
+        }
+
+        .nav_links a {
+            color: white;
+            margin: 0px 30px;
+        }
+
+        th {
+            margin: 10px 20px;
+            background-color: green;
+            padding: 20px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav_links">
+            <a href="index.html">Home</a>
+            <a href="search..html">Search</a>
+        </div>
+    </nav>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Brewery_type</th>
+                    <th>City</th>
+                    <th>State</th>
+                    <th>Country</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </main>
+    <script>
+
+
+        getdata()
+        async function getdata() {
+            let url = "https://api.openbrewerydb.org/breweries";
+
+            let res = await fetch(url);
+            let data = await res.json();
+            //  console.log(data);
+            // console.log(data.Array.id);
+            display(data);
+        }
+        function display(data) {
+
+            data.map((ele) => {
+                let tbody = document.querySelector("tbody");
+
+                let tr = document.createElement("tr");
+                let td1 = document.createElement("td");
+                let td2 = document.createElement("td");
+                let td3 = document.createElement("td");
+                let td4 = document.createElement("td");
+                let td5 = document.createElement("td");
+                let td6 = document.createElement("td");
+                td1.innerText = ele.id;
+                td2.innerText = ele.name;
+                td3.innerText = ele.brewery_type;
+                td4.innerText = ele.city;
+                td5.innerText = ele.state;
+                td6.innerText = ele.country;
+                tr.append(td1, td2, td3, td4, td5, td6);
+                tbody.append(tr);
+            });
+
+
+        }
+
+    </script>
+</body>
+
+</html>

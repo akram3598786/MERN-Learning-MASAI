@@ -1,0 +1,9 @@
+.center{
+    text-align: center;
+}
+
+.todo{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}

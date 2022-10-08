@@ -1,0 +1,36 @@
+
+Count of Men in Engineering
+>> learn_mongo_2> db.employee_salary.find({gender:"Male", department : "Engineering"}).count()
+
+Count of Women in Engineering who earn less than one million
+>> learn_mongo_2> db.employee_salary.find({gender:"Female", department : "Engineering", salary: {$lt:1000000}}).count()
+
+Count of people make less than 80k
+>> learn_mongo_2> db.employee_salary.find({salary : {$lt:80000}}).count()
+
+People who belong Accounting and Legal who make less than 100k
+>> learn_mongo_2> db.employee_salary.find({department : "Accounting", salary : {$lt:100000}})
+
+Top 10 earning Men
+>> learn_mongo_2> db.employee_salary.find({gender : "Male"}).sort({salary : -1}).limit(10)
+
+Bottom 10 earning Women
+>> learn_mongo_2> db.employee_salary.find({gender : "Female"}).sort({salary : 1}).limit(10)
+
+Top 5 earning Engineering people
+>> learn_mongo_2> db.employee_salary.find({department : "Engineering"}).sort({salary : -1}).limit(5)
+
+Bottom 5 earning Legal people
+>> learn_mongo_2> db.employee_salary.find().sort({salary : 1}).limit(5)
+
+Women ranked 30 to 50 in terms of salary earned
+>> learn_mongo_2> db.employee_salary.find({gender : "Female"}).sort({salary : -1}).skip(29).limit(50)
+
+Men ranked 50 to 100 in terms of salary earned
+>> learn_mongo_2> db.employee_salary.find({gender : "Male"}).sort({salary : -1}).skip(49).limit(100)
+
+Bottom 50 earning women in Engineering
+>> learn_mongo_2> db.employee_salary.find({gender : "Female", department : "Engineering"}).sort({salary : 1}).limit(50)
+
+Top 50 earning men in Human Resources
+>> learn_mongo_2> db.employee_salary.find({gender : "Male", department : "Human Resources"}).sort({salary : -1}).limit(50)

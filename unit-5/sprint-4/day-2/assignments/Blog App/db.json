@@ -1,0 +1,35 @@
+{
+  "blogs": [
+    {
+      "title": "MASAI",
+      "category": "education",
+      "author": "Akky",
+      "body": "WJNK JKWD  WJKDMWks mjkwds\nWJNK JKWD  WJKDMWks mjkwds",
+      "id": 2
+    },
+    {
+      "title": "IIT Delhi",
+      "category": "sports",
+      "author": "Bhullad",
+      "body": " jkndnwnd mklwkS KMDKS DKOMDFE  FEKMF pokwk WDKPOWK W KOwd ewkdmeklsmd fkmwkmw",
+      "id": 3
+    },
+    {
+      "title": "IIT Bombay",
+      "category": "education",
+      "author": "Savej",
+      "body": "skxk dmvsmkvm",
+      "id": 4
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

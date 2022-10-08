@@ -1,0 +1,18 @@
+{
+    "options": {},
+    "indexes": [
+        {
+            "v": {
+                "$numberInt": "2"
+            },
+            "key": {
+                "_id": {
+                    "$numberInt": "1"
+                }
+            },
+            "name": "_id_",
+            "ns": "learn_mongo_2.employee_salary"
+        }
+    ],
+    "uuid": "3d1dcfbdf4764ebcb0f3d21429c4da37"
+}

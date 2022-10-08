@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home page</title>
+
+  <style>
+    #navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: brown;
+      color: white;
+    }
+  .center{
+    text-align: center;
+  }
+    #user-form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: vh;
+      /* background-color: yellow; */
+      flex-direction: column;
+    }
+
+    form {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border: 2px solid black;
+      border-radius: 9px;
+    }
+
+    form>* {
+      margin: 9px 0px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="navbar">
+    <h3>News App</h3>
+    <h3>Sign-Up</h3>
+    <h3>
+      <a href="/worldNews.html">World News</a>
+    </h3>
+  </div>
+  <div id="user-form">
+    <!-- Profile Pic, (Id:- user_pic)
+Name, (Id:- user_name)
+Email, (Id:- user_email)
+country, (Id: user_country) >> Dropdown with options "India", "China", "Newzeland", "USA", "UK.  
+** Submit button will have Id:- "submit". -->
+<p class="center" id="msg""></p>
+    <form action="submit">
+      <input id="user_pic" type="text" placeholder="user_pic" value="">
+      <input id="user_name" type="text" placeholder="user_name" value="">
+      <input id="user_email" type="email" placeholder="user_email" value="">
+      <select name="country" id="user_country">
+        <option value="">Country</option>
+        <option value="in">India</option>
+        <option value="ch">China</option>
+        <option value="nz">Newzeland</option>
+        <option value="us">USA</option>
+        <option value="uk">UK</option>
+      </select>
+      <input type="submit">
+    </form>
+
+  </div>
+</body>
+
+<script type="module" src="./scripts/index.js"></script>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .cont{
+            height: 500px;
+            width: 700px;
+            margin: auto;    
+        }
+        .cont div{
+            border: 2px solid black;
+        }
+
+        h1{
+            font-size: 100px;
+            text-align: center;
+        }
+        button{
+            width: 300px;
+            height: 80px;
+            font-size: 50px;
+            margin: 0px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div>
+            <h1 id="counter"></h1>
+           
+                <button id="inc">Increase++</button>
+                <button id="dec">decrease--</button>
+            </div>
+    </div>
+
+    <script>
+        let count= localStorage.getItem("counter") || 0;  
+        document.getElementById("inc").addEventListener("click",increase);
+        document.getElementById("dec").addEventListener("click",decrease);
+        let out=document.getElementById("counter");
+        out.innerText= count;
+        function increase(){
+            count++;
+            localStorage.setItem("counter",count);
+            out.innerText= count;
+        }
+        function decrease(){
+            count--;
+            localStorage.setItem("counter",count);
+            out.innerText= count;
+        }
+    </script>
+</body>
+</html>

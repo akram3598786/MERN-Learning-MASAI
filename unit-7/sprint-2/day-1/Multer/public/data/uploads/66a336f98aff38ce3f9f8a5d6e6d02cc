@@ -1,0 +1,147 @@
+
+1.Restaurant Wesite-
+https://akram3598786.github.io/Restraurant-responsive-website/solution-starter/index.html
+
+desc-It's a web application for a restaurant. User can see available meal and price by menu. Also can check locations and available of service area on map. 
+
+2.Coding for juniors -
+Live link : https://akram3598786.github.io/coding-for-juniors/Coding%20for%20juniors%20official/index.html#carouselExampleCaptions
+Github Link : https://github.com/akram3598786/coding-for-juniors
+
+short desc- - Its my first project.It's a educational website for providing the details of course and curriculum to aspiring school students for programming.About us and checck prices pages. < Solo Project > 
+features : 
+- User can check available courses, price and details.
+- User can purchase course by making payment.
+
+3.Note Application-
+https://akram3598786.github.io/Note-Application/Notes%20web%20application/
+
+desc- User can use this web application for taking notes at different instant of Times. Notes can be search and delete . 
+
+4.Book Library Website-
+https://akram3598786.github.io/Book-Library-Web-Application/
+
+desc-Librarian can issue book with date,time,book and user details and can check issued data. He can delete any issues book.
+
+5. Royal Brothers Clone
+live link : https://royal-brothers-clone.netlify.app/
+GITHUB - https://github.com/akram3598786/Royal-Brothers-Clone
+short desc : Its a bike rental and e-commerce website. User can book bike and purchase products. Signup | Login | Payment Gateway | Animations
+Feature - 
+ User can register and login.
+ Book bike by selecting city. 
+ Add product to cart then purchase by making payment.
+
+Project lead and all JavaScript code done by me.
+Made UI for available bike, products and cart page.
+
+6. Red Bus Clone -
+live Link : 
+GIthub : https://github.com/akram3598786/Red-Bus-Clone
+Desk - Clone of Red bus website. Signup | Login | Edit & Show profile | All Ticket booking and managing functionalities, Ride and RailRide pages with animations.
+
+{ New Resume builder given by MASAI -  https://rxresu.me/  }
+
+About me : I am a aspiring full stack web developer and scholar with a keen interest in exploring new technologies. 
+I love to coding and looking forward to a growth oriented learning environment in an organization where I can utilize and enhance my skills for mutual benefits.
+
+Mail : developerakky2407@gmail.com
+Address : Ram Nagar, Ward no.-06, Panipat, Haryana (132103)
+Portfolio: https://akram-portfolio-v2.netlify.app/
+Linkdin : https://www.linkedin.com/in/akram-ali-b0940216a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B%2FGD193dhSpmjCTEj1jBp9Q%3D%3D
+github : akram3598786
+leetCode : coder_akram
+Twitter : @Akram3598
+CodePen : @akram3598786
+StackOverflow : user:16142621
+Insta : imakramakky
+
+Accompishments : Got 3 awards form MASAI School.
+
+1. The Rising Star Award.
+2. The Comback Kid Award.
+3. The Power Project Award.
+
+I got working exposure by my freelancer job during the 3rd-4th year of college.
+
+interests :
+Connecting with new people.
+Explore new technologies.
+Swimming.
+
+Samples by MASAI: https://docs.google.com/spreadsheets/d/1NsZSDSS2nvvOwddPYE3XRaN-DhODB_JLnwOye9SNPgM/edit#gid=1414006777
+Samples on github : https://github.com/emmabostian/developer-portfolios
+
+
+awkward : animation : https://samikmalhotra.netlify.app/
+
+SELECTED Samples :  
+ - https://harikanani.github.io/PortfolioV2/#/home  git : https://github.com/harikanani/PortfolioV2
+ - https://hrishi.tech/#/projects    git - https://github.com/Hrishi1999/opPortfolio
+ - https://sv-dev.netlify.app/
+ - https://sv-dev.netlify.app/  git : https://github.com/vsnaichuk/React-Portfolio
+ - https://ahsankhan.me/                   ==> built with next.js
+ - https://aakash-sharma.netlify.app/  GITHUB : https://github.com/aakashsh1999/portfolio_website
+ - https://www.abhijha.live/ GIT : 
+ - https://github.com/emmabostian/developer-portfolios
+ - https://sv-dev.netlify.app/
+
+for Aayesh - https://dev-portfolio-template.netlify.app/  git- https://github.com/hhhrrrttt222111/developer-portfolio
+ 
+https://geekflare.com/web-scraping-in-javasrt
+
+
+<a href="https://instagram.com/imakramakky" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="imakramakky" height="30" width="40" /></a>
+
+Installations :- 
+
+$ npm install react-router-dom@6       
+
+
+Deployemnt - Netlify
+
+.env - REACT_APP_BASE_URL=https://localhost:3000
+
+npm install netlify-cli -g
+
+"homepage":"."
+
+npm run build
+
+_redirects     =>  /* /index.html 200
+
+netlify deploy
+
+path - build
+
+netlify deploy --prod
+
+deploy react with heroku with zero configuration
+npm install -g create-react-app
+create-react-app my-app
+cd my-app
+git init
+heroku create -b https://github.com/mars/create-react-app-buildpack.git
+git add .
+git commit -m "react-create-app on Heroku"
+git push heroku master
+heroku open
+
+
+JSON PoST ======>
+
+   const postData = (payload) => {
+        fetch("https://reqres.in/api/login", {
+            method: "POST",
+            body: JSON.stringify(payload),
+            headers: {
+                "Content-Type": "application/json",
+            }
+        }).then(() => {
+            fetchAndUpdateData();\\]
+        })
+    }
+
+lcs
+water fill problem of stack
+

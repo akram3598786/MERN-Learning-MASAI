@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>age_check</title>
+    <style>
+        #cont{
+            background-color: brown;
+            height: 200px;
+            display: block;
+            width: 700px;
+            position: absolute;
+            top: 30%;
+            left: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        #btn{
+            margin-top: 9px;
+        }
+        #out{
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="cont">
+        <input id="input" type="number" value="">
+        <button id="btn" onclick="check_eligibilty()">Check Driving Eligibility</button>
+      <br>
+        <p id="out"></p>
+    </div>
+    <script>
+        function check_eligibilty() {
+            let age = document.getElementById("input").value;
+            let out = document.getElementById("out");
+            console.log(age)
+            let str = "";
+            if (age < 18) {
+                str = "You can't drive in India";
+            } else if (age == 18) {
+                str = "You are just old enough to drive in India!";
+            } else {
+                str = "You can drive in India! ";
+            }
+            out.innerText = str;
+        }
+    </script>
+</body>
+
+</html>

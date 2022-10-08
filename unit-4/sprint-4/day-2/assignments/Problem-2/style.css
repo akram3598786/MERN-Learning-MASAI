@@ -1,0 +1,62 @@
+
+/* Navbar CSS  */
+nav{
+    background-color: black;
+    color: white;
+    /* position: fixed; */
+    /* width: 100vw; */
+    /* top: 0;
+    left: 0; */
+}
+nav div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav div div a{
+    margin: 0px 40px;
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+}
+div a:nth-child(3){
+  background-color: tomato;
+  padding: 8px 20px;
+}
+
+
+/* Products css */
+#products div{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  border-radius: 9px;
+  box-shadow: 4px black;
+}
+#container{
+    padding: 20px;
+}
+#contents {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+  }
+  #products div div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 8px;
+  }
+
+  .box p{
+    font-size: 32px;
+    margin: 0;
+  }
+  .box button{
+    margin-top: 20px;
+    width: 300px;
+    height: 50px;
+    margin-bottom: 2px;
+    background-color: rgb(73, 237, 237);
+  }

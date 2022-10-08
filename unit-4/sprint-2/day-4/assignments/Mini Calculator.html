@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Calculator</title>
+
+    <style>
+        #cont {
+            height: 400px;
+            width: 700px;
+            margin: auto;
+            margin-top: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 4px solid black;
+            border-radius: 15px;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: -9 0px;
+
+        }
+
+        #btns {
+            display: flex;
+        }
+
+        button {
+            margin: 9px;
+            width: 140px;
+            height: 50px;
+        }
+
+        input {
+            height: 60px;
+            margin: 9px;
+        }
+
+        #result {
+            height: 60px;
+            width: 360px;
+            margin-top: 40px;
+            border: 3px solid black;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #result p {
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="cont">
+        <div class="box">
+            <div id="inputs">
+                <input id="num" type="number" placeholder="Enter 1st Number" value="">
+                <input id="num2" type="number" placeholder="Enter 2nd Number" value="">
+            </div>
+            <div id="btns">
+                <button id="add">Add</button>
+                <button id="substract">Substract</button>
+                <button id="multiply">Multiply</button>
+                <button id="divide">Divide</button>
+            </div>
+            <div id="result">
+                <p id="out"></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let out = document.getElementById("out");
+        document.getElementById("add").addEventListener("click", addition);
+        document.getElementById("substract").addEventListener("click", substration);
+        document.getElementById("multiply").addEventListener("click", multiplication);
+        document.getElementById("divide").addEventListener("click", division);
+
+        function addition() {
+            let inp = document.getElementById("num");
+            let inp2 = document.getElementById("num2");
+            let num = inp.value;
+            let num2 = inp2.value;
+            num = parseInt(num);
+            num2 = parseInt(num2);
+            let res = num + num2;
+            out.innerText = res;
+            //  inp.value="";
+            //  inp2.value="";
+        }
+        function substration() {
+            let inp = document.getElementById("num");
+            let inp2 = document.getElementById("num2");
+            let num = inp.value;
+            let num2 = inp2.value;
+            num = parseInt(num);
+            num2 = parseInt(num2);
+            let res = num - num2;
+            out.innerText = res;
+            //  inp.value="";
+            //  inp2.value="";
+        }
+        function multiplication() {
+            let inp = document.getElementById("num");
+            let inp2 = document.getElementById("num2");
+            let num = inp.value;
+            let num2 = inp2.value;
+            num = parseInt(num);
+            num2 = parseInt(num2);
+            let res = num * num2;
+            out.innerText = res;
+            //  inp.value="";
+            //  inp2.value="";
+        }
+        function division() {
+            let inp = document.getElementById("num");
+            let inp2 = document.getElementById("num2");
+            let num = inp.value;
+            let num2 = inp2.value;
+            num = parseInt(num);
+            num2 = parseInt(num2);
+            let res = num / num2;
+            out.innerText = res;
+            //  inp.value="";
+            //  inp2.value="";
+        }
+
+    </script>
+</body>
+
+</html>

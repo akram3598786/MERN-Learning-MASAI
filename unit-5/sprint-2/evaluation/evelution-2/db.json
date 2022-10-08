@@ -1,0 +1,12 @@
+{
+"employees": [
+    {
+      "id" : 1,
+      "name" : "John",
+      "age" : 36,
+      "gender" : "male",
+      "department" : "Marketing", // some suggestions : "HR", "IT", "Operations", "Product",
+      "salary" : 90000
+    },
+  ]
+}

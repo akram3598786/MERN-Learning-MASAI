@@ -1,0 +1,69 @@
+/* Utility CSS  */
+.center {
+    text-align: center;
+}
+button{
+    cursor: pointer;
+}
+/* Input form CSS  */
+
+.form_main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+form>label {
+    margin: 9px 0px;
+}
+
+label input {
+    width: 500px;
+    display: flex;
+}
+#submit_btn{
+    margin-top: 20px;
+    width: 200px;
+    height: 40px;
+    border-radius: 12px;
+}
+#submit_btn:hover{
+    background-color: grey;
+}
+
+
+/* display blogs CSS  */
+
+#display_blogs_main{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 30px;
+   flex-direction: column;
+}
+
+th,td{
+    border: 2px solid black;
+    padding: 9px;
+}
+
+#create_blog_btn{
+    width: 230px;
+    height: 40px;
+    background-color: green;
+    color: white;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+#create_blog_btn:hover{
+    background-color: rgb(30, 177, 30);
+}

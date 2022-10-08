@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin-Panel</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav>
+       <img src="logo.png" alt="">
+    </nav>
+    <hr>
+    <div class="upper_section">
+    <h1 class="center">Admin Panel</h1>
+    <a class="center" href="products.html">See Added Products</a>
+</div>
+<main>
+
+    <!-- 
+     Products to be add
+     {
+        n- vivo iQOO Z6 44W 
+        c- Electronics
+        img - https://m.media-amazon.com/images/I/61AFUMyh5QL._SL1200_.jpg
+        p- 14,499
+     }
+     
+     {
+        n- T-Shirt
+        c- Clothes
+        img - https://images-na.ssl-images-amazon.com/images/G/31/Symbol/2020/00NEW/HexaSBC/Men/8._CB433909716_.jpg
+        p- 1199
+     } -->
+
+    <form action="submit">
+        <label for="">Product Name : 
+         <input id="name" type="text" value="">
+        </label>
+        <label for="">Category : 
+         <input id="category" type="text" value="">
+        </label>
+        <label for="">Image URL : 
+         <input id="image" type="text" value="">
+        </label>
+        <label for="">Price : 
+         <input id="price" type="number" value="">
+        </label>
+        <label for="">Gender : 
+         <select id="gender">
+            <option value="">Select</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+         </select>
+        </label>
+        <label for="">Sold : 
+            <span id="sold" value="false"></span>
+        </label>
+        <input type="submit" id="add">
+    </form>
+</main>
+<script src="admin.js"></script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Playing-video-youtube</title>
+    <style>
+        #play_video_cont iframe{
+            width: 100%;
+            height: 600px;  
+        }
+    </style>
+</head>
+<body>
+         <nav>
+            <div class="left_sec">  
+                <i class="fa-solid fa-bars"></i>
+                <a href="youtube.html"><img class="logo" src="logo.png"></a> 
+            </div>
+            <div class="mid_sec">  
+                <label for=""> 
+                    <input  type="text" name="" id="title_input" placeholder="">
+                    <button id="search_btn" onclick="getvideos()"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </label>
+                    <i class="fa-solid fa-microphone"></i>
+            </div>
+            <div class="right_sec">  
+                <i class="fa-solid fa-video"></i>
+                <i class="fa-regular fa-bell"></i>
+                <p>A</p>
+            </div>
+            
+        </nav> 
+        <hr>
+<div class="container"> 
+    <div id="play_video_cont">
+           
+    </div>
+ </div>
+ <script src="https://kit.fontawesome.com/792b524030.js" crossorigin="anonymous"></script>
+</body>
+<script src="youtube.js"></script>
+<script>
+
+let video_id = localStorage.getItem("video");
+play_video(video_id);
+ function play_video(video_id){
+          // https://youtube/Fp8msa5uYsc
+    let play_video_cont = document.getElementById("play_video_cont");
+    let video_frame=document.createElement("iframe");
+    let url=`https://www.youtube.com/embed/${video_id}`;
+    video_frame.src=url;
+    play_video_cont.append(video_frame);
+}
+</script>
+</html>

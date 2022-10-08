@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin-Panel</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <style>
+    .center{
+        text-align: center;
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+    }
+    nav img{
+        height: 60px;
+        width: 100px;
+        margin: auto;
+    }
+    main{
+        display: flex;
+        justify-content: center;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        border: 2px solid black;
+        border-radius: 12px;
+        padding: 20px;
+    }
+    form label{
+        margin: 9px 0px;
+    }
+    label input{
+        width: 300px;
+       display: flex;
+    }
+  </style>
+  <body>
+    <nav>
+       <img src="logo.png" alt="">
+    </nav>
+    <hr>
+    <h1 class="center">Admin Panel</h1>
+<main>
+    <form action="submit">
+        <label for="">Product Name : 
+         <input id="name" type="text" value="">
+        </label>
+        <label for="">Category : 
+         <input id="category" type="text" value="">
+        </label>
+        <label for="">Image URL : 
+         <input id="image" type="text" value="">
+        </label>
+        <label for="">Price : 
+         <input id="price" type="number" value="">
+        </label>
+        <label for="">Gender : 
+         <select id="gender">
+            <option value="">Select</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+         </select>
+        </label>
+        <label for="">Sold : 
+            <span id="sold" value="false"></span>
+        </label>
+        <input type="submit" id="add">
+    </form>
+</main>
+	<script>
+         let sold_flg=document.getElementById("sold");
+        sold_flg.innerText="False";
+        
+        document.querySelector("form").addEventListener("submit",()=>{
+            event.preventDefault();
+            let products = JSON.parse(localStorage.getItem("Products")) || [];
+            let name = document.getElementById("name").value;
+            let category = document.getElementById("category").value;
+            let image_url = document.getElementById("image").value;
+            let price = document.getElementById("price").value;
+            let gender = document.getElementById("gender").value;
+            sold_flg.innerText="True";
+            let sold=false;
+            const obj = new Obj(name,category,image_url,price,gender,sold);
+            products.push(obj);
+            localStorage.setItem("Products",JSON.stringify(products));
+        });
+       
+        function Obj(name,category,image_url,price,gender,sold){
+            this.name=name;
+            this.category=category;
+            this.image_url=image_url;
+            this.price=price;
+            this.gender=gender;
+            this.sold=sold;
+        }
+       
+    </script>
+  </body>
+</html>
