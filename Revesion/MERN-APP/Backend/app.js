@@ -6,10 +6,11 @@ const app = express();
 
 app.use(express.json());
 app.use("/auth",AuthRouter);
+
 let port = 8080;
-app.get("/",(rq, res)=>[
-    res.send("Its working fine")
-])
+// app.get("/",(rq, res)=>[
+//     res.send("Its working fine")
+// ])
 app.listen(port, async (req, res)=>{
     try{
        await ConnectDB();

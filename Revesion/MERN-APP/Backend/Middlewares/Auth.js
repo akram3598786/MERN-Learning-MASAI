@@ -1,5 +1,5 @@
 const express = require("express");
-const UserModel = require("../Modals/User.model");
+const UserModel = require("../Models/User.model");
 const AuthRouter = express.Router();
 
 AuthRouter.post("/signup",SignUp);
@@ -25,7 +25,7 @@ async function Login(req, res){
    let foundUser = await UserModel.findOne(payload);
    foundUser = foundUser.toJSON();
    delete foundUser.password;
-   console.log(foundUser)
+  // console.log(foundUser)
    res.status(201).send({message : `${foundUser.name} logged in successfully`, token, foundUser })
  }
  catch(err){
