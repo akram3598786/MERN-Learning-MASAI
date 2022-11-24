@@ -6,7 +6,8 @@ const UserSchema = new mongoose.Schema(
         name : {type : String, require:true},
         email : {type : String, require: true, unique: true},
         mobile : {type : Number},
-        password : {type : String, require:true}
+        password : {type : String, require:true},
+        posts : [String]
     },{
         versionKey : false,
         timestamps : true
@@ -14,13 +15,5 @@ const UserSchema = new mongoose.Schema(
 );
 
 const UserModel = mongoose.model("User", UserSchema, "users");
-
-const PostSchema = new mongoose.Schema(
-{
-    title : {type : String, require : true},
-    description : {type : String},
-
-}
-);
 
 module.exports = UserModel;

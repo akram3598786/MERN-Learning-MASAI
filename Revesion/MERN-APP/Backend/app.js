@@ -1,11 +1,13 @@
 const express = require("express");
 const ConnectDB  = require("./Config/ConnectDB.js");
+const PostRouter = require("./Controllers/Posts.js");
 const AuthRouter = require("./Middlewares/Auth.js");
 
 const app = express();
 
 app.use(express.json());
 app.use("/auth",AuthRouter);
+app.use("/post",PostRouter);
 
 let port = 8080;
 // app.get("/",(rq, res)=>[
