@@ -7,11 +7,12 @@ UserRouter.get("/:userId", getUserData);
 async function getUserData(req, res){
     try{
         let {userId} = req.params;
-         let userData = await UserModel.findById(userId);
+         let userData = await UserModel.findById(userId).populate('posts');
+         console.log(userData.posts)
          userData = userData.toJSON();
          delete userData.password;
          if(userData) res.status(200).send(userData);
-         else res.status(404).send("User not found !")
+         else res.status(404).send("User not found !");
     }
     catch(err){
         res.send(err.message);
